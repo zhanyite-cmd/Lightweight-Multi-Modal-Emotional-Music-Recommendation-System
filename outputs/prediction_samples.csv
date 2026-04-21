@@ -1,0 +1,21 @@
+﻿text,emotion_ids,coarse_label,true_label,pred_label,correct
+Eff your video - love Canada 🇨🇦 Stupid geolock,"2,3",negative,negative,positive,False
+"I know they are treated very well, but some of them do die.",3,negative,negative,neutral,False
+Man I love this team. No I hate this team. No I love this team!,"2,18",negative,negative,positive,False
+I can't watch Isco rotting on the bench and LV playing instead.,27,neutral,neutral,negative,False
+I hieaa i just trip out how your lds and not know or here. Nevermo here a d hears when i was a kid,27,neutral,neutral,neutral,True
+"You're my mvp for the night haha. I'll drop by there tonight, thanks!","1,15",positive,positive,positive,True
+"Asides from the max number of choices each share, probably being shamed on the internet",27,neutral,neutral,negative,False
+[NAME] [NAME] Bros are losing their minds over this tweet.,1,positive,positive,negative,False
+"Awesome, that's super good news :D",0,positive,positive,positive,True
+Fuck you.,2,negative,negative,negative,True
+Waiting for both of these things is torture,27,neutral,neutral,negative,False
+Please give us updates. Oh wow.,13,positive,positive,positive,True
+I think a [NAME] government would be far far worse than Brexit.,27,neutral,neutral,negative,False
+Firemen make roughly 30000£ in UK today.,27,neutral,neutral,neutral,True
+Great post. ( you are learning to let it go),0,positive,positive,positive,True
+[NAME] hilarious,1,positive,positive,positive,True
+Honestly you should have gone nuclear on him,"3,27",negative,negative,neutral,False
+shits awesome!,1,positive,positive,positive,True
+Can anyone confirm the [NAME] likliness? Asking for a friend.,27,neutral,neutral,positive,False
+they already ruined their own lives by having an affair. the other spouse knowing is just a consequence of their selfish actions.,3,negative,negative,negative,True

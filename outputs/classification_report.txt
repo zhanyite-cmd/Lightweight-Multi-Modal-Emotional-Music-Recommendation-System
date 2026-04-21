@@ -1,0 +1,17 @@
+Accuracy Verification
+accuracy_score  : 0.712180
+numpy mean      : 0.712180
+manual count    : 0.712180
+correct / total : 3865 / 5427
+weighted_f1     : 0.713600
+
+Classification Report
+              precision    recall  f1-score   support
+
+    negative     0.6852    0.6940    0.6896      1402
+     neutral     0.6157    0.6513    0.6330      1606
+    positive     0.7998    0.7631    0.7810      2419
+
+    accuracy                         0.7122      5427
+   macro avg     0.7002    0.7028    0.7012      5427
+weighted avg     0.7157    0.7122    0.7136      5427
