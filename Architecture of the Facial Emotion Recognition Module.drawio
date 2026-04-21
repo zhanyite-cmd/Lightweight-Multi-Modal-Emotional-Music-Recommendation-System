@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="AY2H0rDnLhWIQj5DqwaV" name="第 1 页">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="box1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E6FA;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" value="Input&lt;br&gt;(Camera/Image/Video)" vertex="1">
+          <mxGeometry height="60" width="180" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="box2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E6FA;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" value="YOLO&lt;br&gt;Face Detection" vertex="1">
+          <mxGeometry height="60" width="160" x="240" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="box3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E6FA;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" value="Face&lt;br&gt;Cropping" vertex="1">
+          <mxGeometry height="60" width="160" x="440" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="box4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E6FA;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" value="Emotion&lt;br&gt;Classification&lt;br&gt;(7 Classes)" vertex="1">
+          <mxGeometry height="60" width="180" x="640" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="box5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1E6FA;strokeColor=#000000;fontFamily=Arial;fontSize=12;align=center;verticalAlign=middle;" value="Output&lt;br&gt;Emotion + S&lt;sub&gt;f&lt;/sub&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="860" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" edge="1" parent="1" source="box1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;" target="box2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="box2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;" target="box3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="box3" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;" target="box4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" edge="1" parent="1" source="box4" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;strokeColor=#000000;" target="box5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
