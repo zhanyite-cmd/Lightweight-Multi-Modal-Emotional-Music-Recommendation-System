@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="WHe1p19KOZkEUSU5qI9x">
+    <mxGraphModel dx="2571" dy="1413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#6b8e6b;strokeWidth=2;fontSize=18;fontWeight=bold;" value="Lightweight Multi-Modal Emotional Music Recommendation System&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="1000" x="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="layer1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Research Background and Problem Statement" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="layer1-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Traditional music recommendation relies on behavior and content features, cannot capture real-time emotion&lt;br&gt;Single-modal emotion recognition lacks robustness in complex scenes&lt;br&gt;No lightweight, edge-deployable multi-modal emotional music recommendation scheme" vertex="1">
+          <mxGeometry height="70" width="1000" x="300" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="layer2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Literature Review and Research Gaps" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="layer2-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Lightweight text emotion: Tiny-BERT, DistilRoBERTa&lt;br&gt;Facial emotion: YOLO detection + lightweight CNN&lt;br&gt;Music-emotion mapping: audio features + user comment emotion&lt;br&gt;Gaps: insufficient dual-modal fusion, no UGC integration, poor edge deployment" vertex="1">
+          <mxGeometry height="90" width="1000" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="layer3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Overall Research Framework" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="layer3-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Facial Emotion Recognition + Text Emotion Recognition -&gt; Weighted Fusion -&gt; Emotion-Music Matching -&gt; Lightweight Edge Deployment" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="layer4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Core Module Implementation" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mod1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=13;fontWeight=bold;" value="Facial Emotion Module" vertex="1">
+          <mxGeometry height="140" width="230" x="300" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="mod1-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=11;" value="Input: Camera / Image / Video&lt;br&gt;YOLO Face Detection&lt;br&gt;Lightweight CNN (7 emotions)&lt;br&gt;Output: Emotion + Confidence Sf" vertex="1">
+          <mxGeometry height="80" width="230" x="300" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="mod2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=13;fontWeight=bold;" value="Text Emotion Module" vertex="1">
+          <mxGeometry height="140" width="230" x="550" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="mod2-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=11;" value="Input: User Comments / Text&lt;br&gt;DistilRoBERTa Model&lt;br&gt;Preprocessing + Tokenization&lt;br&gt;Output: Emotion + Confidence St" vertex="1">
+          <mxGeometry height="80" width="230" x="550" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="mod3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=13;fontWeight=bold;" value="Multi-Modal Fusion Module" vertex="1">
+          <mxGeometry height="140" width="230" x="800" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="mod3-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=11;" value="Weighted Decision Fusion&lt;br&gt;wf=0.6, wt=0.4&lt;br&gt;Efinal=argmax(wf*Sf+wt*St)&lt;br&gt;Output Final Emotion" vertex="1">
+          <mxGeometry height="80" width="230" x="800" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="mod4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1;fontSize=13;fontWeight=bold;" value="Music Recommendation Module" vertex="1">
+          <mxGeometry height="140" width="230" x="1050" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="mod4-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=11;" value="Music Library: Audio + Comment Emotion&lt;br&gt;7 Emotion-Based Playlists&lt;br&gt;Emotion-Music Matching&lt;br&gt;Output Personalized Playlist" vertex="1">
+          <mxGeometry height="80" width="230" x="1050" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="layer5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="System Integration and GUI" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="layer5-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Environment: Python + PyTorch + YOLO + Transformers&lt;br&gt;GUI: Tkinter, real-time detection, analysis, export&lt;br&gt;End-to-End: Perception - Fusion - Recommendation - Feedback" vertex="1">
+          <mxGeometry height="70" width="1000" x="300" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="layer6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Experiments and Evaluation" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="layer6-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Datasets: FER-2013, CK+, GoEmotions, GTZAN&lt;br&gt;Metrics: Accuracy, Inference Time, FPS, User Satisfaction&lt;br&gt;Results: Multi-modal 89.7% accuracy, real-time, high satisfaction" vertex="1">
+          <mxGeometry height="80" width="1000" x="300" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="layer7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f8ff;strokeColor=#4682b4;strokeWidth=1;fontSize=14;fontWeight=bold;" value="Conclusion and Future Work" vertex="1">
+          <mxGeometry height="50" width="1000" x="300" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="layer7-content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;strokeWidth=1;fontSize=12;" value="Contributions: Lightweight fusion, end-to-end recommendation, GUI&lt;br&gt;Limitations: Limited emotions, English only, simple recommendation&lt;br&gt;Future: Fine-grained emotion, multilingual, mobile, multi-source fusion" vertex="1">
+          <mxGeometry height="90" width="1000" x="300" y="1290" as="geometry" />
+        </mxCell>
+        <mxCell id="conn1" edge="1" parent="1" source="title" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn2" edge="1" parent="1" source="layer1" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer1-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn3" edge="1" parent="1" source="layer1-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn4" edge="1" parent="1" source="layer2" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer2-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn5" edge="1" parent="1" source="layer2-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn6" edge="1" parent="1" source="layer3" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer3-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn7" edge="1" parent="1" source="layer3-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn8" edge="1" parent="1" source="layer4" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn9" edge="1" parent="1" source="layer4" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn10" edge="1" parent="1" source="layer4" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn11" edge="1" parent="1" source="layer4" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn12" edge="1" parent="1" source="mod1" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod1-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn13" edge="1" parent="1" source="mod2" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod2-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn14" edge="1" parent="1" source="mod3" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod3-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn15" edge="1" parent="1" source="mod4" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod4-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn16" edge="1" parent="1" source="mod1-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn17" edge="1" parent="1" source="mod2-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn18" edge="1" parent="1" source="mod3-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="mod4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn19" edge="1" parent="1" source="mod4-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn20" edge="1" parent="1" source="layer5" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer5-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn21" edge="1" parent="1" source="layer5-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn22" edge="1" parent="1" source="layer6" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer6-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn23" edge="1" parent="1" source="layer6-content" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn24" edge="1" parent="1" source="layer7" style="endArrow=block;html=1;strokeWidth=1;strokeColor=#666666;" target="layer7-content">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
